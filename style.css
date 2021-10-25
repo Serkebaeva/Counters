@@ -1,0 +1,75 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: rgb(96, 96, 145);
+  font-family: sans-serif;
+  color: aquamarine;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.features {
+  margin-top: 10em;
+}
+
+.features-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.features-item {
+  position: relative;
+  width: 300px;
+  min-height: 250px;
+  margin: 1em;
+  border: 1px solid aquamarine;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.features-item::before {
+  position: absolute;
+  top: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 80px;
+  content: "";
+  background-image: url(images/Image1.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.features-title {
+  padding-top: 7em;
+  text-transform: uppercase;
+  margin-top: 0;
+}
+
+.features-item3::before {
+  background-image: url(images/Polished-Copper-3D-Arrow.svg);
+}
+
+.features-item4::before {
+  background-image: url(images/TzeenieWheenie_Mechanical_alarm_clock_number_tiles.svg);
+}
+
+.features-counter {
+  margin: 0;
+  font-size: 1.9em;
+  font-weight: 900;
+}
